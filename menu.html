@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Menu - Roti & Boti Fine Dining | Doha</title>
+    <meta name="description" content="Explore the full menu of Roti & Boti, offering a wide range of authentic Indian, Mughlai, and Chinese cuisine. View our appetizers, main courses, biryanis, desserts, and more.">
+    <meta name="keywords" content="Roti & Boti menu, Indian food menu Doha, restaurant menu Qatar, fine dining menu">
+    <meta name="author" content="Roti & Boti Fine Dining">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="Menu - Roti & Boti Fine Dining">
+    <meta property="og:description" content="Explore the authentic and healthy Indian-inspired cuisine of Roti & Boti.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://www.rotiandboti.com/menu.html">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Font Configuration -->
+    <style>
+        :root {
+            --navy: #1A237E;
+            --gold: #FFAB00;
+            --off-white: #F8F9FA;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--off-white);
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Lato', sans-serif; }
+        .bg-navy { background-color: var(--navy); }
+        .bg-gold { background-color: var(--gold); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        
+        /* Sticky Header */
+        #main-header.scrolled {
+            background-color: rgba(26, 35, 126, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Active Menu Filter Button */
+        .filter-btn.active {
+            background-color: var(--navy);
+            color: white;
+            border-color: var(--navy);
+        }
+
+        /* Menu item transition */
+        .menu-item {
+            transition: opacity 0.5s, transform 0.5s;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 top-0 left-0 bg-gold text-navy px-4 py-2">Skip to main content</a>
+    
+    <!-- Header -->
+    <header id="main-header" class="bg-navy sticky top-0 left-0 right-0 z-40 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-2" aria-label="Roti & Boti Homepage">
+                    <svg class="h-8 w-8 text-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    <span class="text-white font-heading text-2xl font-bold">Roti & Boti</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-gold transition-colors duration-300">Home</a>
+                    <a href="menu.html" class="text-gold font-bold transition-colors duration-300">Menu</a>
+                    <a href="about.html" class="text-white hover:text-gold transition-colors duration-300">About</a>
+                    <a href="contact.html" class="text-white hover:text-gold transition-colors duration-300">Contact</a>
+                </nav>
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:+97433555777" class="bg-gold text-navy font-bold py-2 px-5 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg">Book a Table</a>
+                    <a href="https://www.talabat.com/qatar/roti-and-boti" target="_blank" class="border-2 border-gold text-white font-bold py-2 px-5 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-gold focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Home</a>
+                 <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-gold bg-gray-700">Menu</a>
+                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">About</a>
+                 <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Contact</a>
+            </nav>
+            <div class="px-4 pb-4 border-t border-gray-700">
+                <div class="flex items-center space-x-4 mt-4">
+                    <a href="tel:+97433555777" class="flex-1 text-center bg-gold text-navy font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition-all duration-300">Book a Table</a>
+                    <a href="https://www.talabat.com/qatar/roti-and-boti" target="_blank" class="flex-1 text-center border-2 border-gold text-white font-bold py-2 px-4 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Menu Hero Section -->
+        <section class="relative py-24 md:py-32 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-center text-white p-4">
+                <h1 class="font-heading text-5xl md:text-7xl font-black">Our Culinary Creations</h1>
+                <p class="text-lg md:text-2xl mt-4">A symphony of authentic flavors, crafted with passion.</p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Filter Buttons -->
+                <div id="menu-filters" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
+                    <!-- Filter buttons will be dynamically inserted here -->
+                </div>
+                
+                <!-- Menu Grid -->
+                <div id="menu-grid">
+                    <!-- Menu items will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                 <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Roti & Boti</h4>
+                    <p class="text-gray-400">Doha's premier destination for healthy, authentic, and unforgettable Indian-inspired fine dining.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="menu.html" class="text-gray-400 hover:text-gold">Menu</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-gold">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-gold">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Contact Us</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>Showroom #10, Al Emadi Suites</p>
+                        <p>Ras Abu Abboud St, Doha, Qatar</p>
+                        <p class="mt-2"><a href="tel:+97433555777" class="hover:text-gold">+974 3355 5777</a></p>
+                        <p><a href="mailto:info@rotiandboti.com" class="hover:text-gold">info@rotiandboti.com</a></p>
+                    </address>
+                </div>
+                 <!-- Google Maps Embed -->
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Our Location</h4>
+                    <div class="rounded-lg overflow-hidden border-2 border-gold">
+                         <iframe 
+                            src="https://maps.google.com/maps?q=Roti%20%26%20Boti%20Fine%20Dining%20Restaurant%20Doha&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="160" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Location of Roti & Boti Fine Dining"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+                <p>&copy; <span id="current-year"></span> Roti & Boti Fine Dining. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Mobile Menu ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Full Menu Data from Document ---
+        const menuData = [
+            // Salads
+            { category: 'Salads & Soups', name: 'Green Salad Platter', description: 'Combination of cucumber, carrot, tomato, onion and lettuce served on a platter.', price: '15 QR' },
+            { category: 'Salads & Soups', name: 'Kachumber', description: 'Fresh onion, tomato, green chilies with lemon dressing.', price: '15 QR' },
+            { category: 'Salads & Soups', name: 'Mix Veg Raita', description: 'Freshly chopped onion, cucumber, tomato mixed with yogurt.', price: '15 QR' },
+            // Soups
+            { category: 'Salads & Soups', name: 'Chicken Shorba', description: 'Flavorful chicken clear stock with a twist of authentic spices.', price: '22 QR' },
+            { category: 'Salads & Soups', name: 'Tomato Shorba', description: 'Fresh tomato puree cooked on slow flame and served with bread croutons.', price: '20 QR' },
+            { category: 'Salads & Soups', name: 'Lentil Soup', description: 'Blended mixed lentils cooked with spices and served with a pinch of lemon juice.', price: '15 QR' },
+            
+            // Appetizers - Mutton
+            { category: 'Appetizers', name: 'Mutton Barra Chaap', description: 'Tender parts of lamb marinated with salt & pepper and specially grounded spices.', price: '40 QR' },
+            { category: 'Appetizers', name: 'Mutton Cutlet', description: 'Minced meat & bread with aromatic spices prepared in Mumbai Bhatyara style.', price: '40 QR' },
+            { category: 'Appetizers', name: 'Mutton Seekh Kebab', description: 'Minced meat with ground Indian spices molded on skewers and finished on charcoal.', price: '40 QR' },
+            // Appetizers - Chicken
+            { category: 'Appetizers', name: 'Chicken Nizami Kebab', description: 'Boneless chicken leg marinated in authentic spices & yogurt finished in the clay oven.', price: '30 QR' },
+            { category: 'Appetizers', name: 'Chicken Kali Mirch Tikka', description: 'Boneless pieces of chicken based on cream & cheese coated with peppercorn.', price: '30 QR' },
+            { category: 'Appetizers', name: 'Special Tandoori Chicken (H/F)', description: 'Leg & breast pieces of chicken marinated with hot spices and roasted over charcoal.', price: '25/40 QR' },
+            // Appetizers - Seafood
+            { category: 'Appetizers', name: 'Fish Tikka Ajwaini', description: 'Fresh boneless fish delicately spiced & sprinkled with ajwain, finished on the barbeque.', price: '45 QR' },
+            { category: 'Appetizers', name: 'Charcoaled Prawns', description: 'Prawns marinated with spicy red masala cooked in tandoor.', price: '60 QR' },
+            // Appetizers - Veg
+            { category: 'Appetizers', name: 'Paneer Tikka', description: 'Cottage cheese with pepper and onion marinated in hung yogurt and spices.', price: '30 QR', tags: ['Veg'] },
+            { category: 'Appetizers', name: 'Veg Kulfi Kebab', description: 'Scrumptious kebab loaded with veggies and chef special ingredients, fried till crisp.', price: '32 QR', tags: ['Veg'] },
+            
+            // Main Course - Non-Veg
+            { category: 'Main Course', name: 'Mutton Dabba Gosht', description: 'Marinated mutton in a secret rich paste gravy, served with omelet on top.', price: '45 QR' },
+            { category: 'Main Course', name: 'Mutton Shahi Rogan Josh', description: 'Braised lamb chunks cooked with gravy based on brown onions and aromatic spices.', price: '45 QR' },
+            { category: 'Main Course', name: 'Murg Maskewala', description: 'Shredded chicken with mild tomato based gravy completed with a touch of butter.', price: '40 QR' },
+            { category: 'Main Course', name: 'Chicken Angara', description: 'A chicken gravy cooked with aromatic spices and flavored with smoked charcoal.', price: '40 QR' },
+            { category: 'Main Course', name: 'Malvani Fish Curry', description: 'Boneless fish cooked in malvani spicy gravy in a traditional Konkan style.', price: '40 QR' },
+            
+            // Main Course - Veg
+            { category: 'Main Course', name: 'Paneer Tikka Masala', description: 'Roasted cubes of cottage cheese cooked in spicy tomato gravy.', price: '32 QR', tags: ['Veg'] },
+            { category: 'Main Course', name: 'Veg Kolhapuri', description: 'Mixed seasonal vegetables made in thick & spicy coconut based curry.', price: '30 QR', tags: ['Veg'] },
+            { category: 'Main Course', name: 'Dal Makhani', description: 'Black dal cooked with onion & tomato gravy with aromatic Indian spices.', price: '30 QR', tags: ['Veg'] },
+            
+            // Biryani & Rice
+            { category: 'Biryani & Rice', name: 'Dum Pukht Mutton Biryani', description: 'Tender mutton & basmati rice cooked with herbs & spices, dum over low heat.', price: '35/40 QR' },
+            { category: 'Biryani & Rice', name: 'Dum Pukht Chicken Biryani', description: 'Marinated chicken with herbs & spices cooked slowly with saffron rice.', price: '30/35 QR' },
+            { category: 'Biryani & Rice', name: 'Mix Vegetable Biryani', description: 'Seasonal mixed vegetables cooked with all basic ingredients and rice on slow flame.', price: '25 QR', tags: ['Veg'] },
+            { category: 'Biryani & Rice', name: 'Jeera Rice', description: 'Cooked rice sautéed with fried cumin seeds & finished with salt and coriander.', price: '20 QR', tags: ['Veg'] },
+
+            // Breads
+            { category: 'Breads', name: 'Mutton Kheema Paratha', description: 'Minced mutton with spices & herbs rolled in paratha and finished in tandoor.', price: '15 QR' },
+            { category: 'Breads', name: 'Paneer Paratha', description: 'Grated paneer with cheese and onions stuffed in paratha and cooked over charcoal.', price: '12 QR', tags: ['Veg'] },
+            { category: 'Breads', name: 'Garlic Naan Butter', description: 'Soft leavened bread with garlic, cooked in tandoor with butter.', price: '9 QR', tags: ['Veg'] },
+            { category: 'Breads', name: 'Rumali Roti', description: 'Paper-thin soft and delicate bread.', price: '5 QR', tags: ['Veg'] },
+
+            // Chinese Menu
+            { category: 'Chinese Menu', name: 'Chicken Hot & Sour Soup', description: 'Spicy and sour soup with chicken.', price: '20 QR' },
+            { category: 'Chinese Menu', name: 'Gobi Manchurian', description: 'Crispy cauliflower florets tossed in a spicy, sweet and tangy Manchurian sauce.', price: '20 QR', tags: ['Veg'] },
+            { category: 'Chinese Menu', name: 'Chicken Hakka Noodles', description: 'Classic noodles tossed with chicken and vegetables.', price: '20 QR' },
+            
+            // Desserts & Beverages
+            { category: 'Desserts & Beverages', name: 'Gaajar Ka Halwa', description: 'Grated carrots cooked with whole milk, dried fruits and delicious light fudge.', price: '25 QR', tags: ['Veg'] },
+            { category: 'Desserts & Beverages', name: 'Malpua Rabdi (4pcs)', description: 'Small sweet based pancake deep fried & served with rabdi.', price: '25 QR', tags: ['Veg'] },
+            { category: 'Desserts & Beverages', name: 'Pina Colada', description: 'A refreshing tropical mocktail.', price: '15 QR' },
+            { category: 'Desserts & Beverages', name: 'Masala Tea', description: 'Traditional Indian tea with a mixture of aromatic herbs and spices.', price: '5 QR' },
+        ];
+
+        const menuGrid = document.getElementById('menu-grid');
+        const filtersContainer = document.getElementById('menu-filters');
+
+        // Get unique categories
+        const categories = ['All', ...new Set(menuData.map(item => item.category))];
+
+        // Create filter buttons
+        filtersContainer.innerHTML = categories.map(category => 
+            `<button class="filter-btn text-navy font-semibold py-2 px-4 border-2 border-gray-300 rounded-full transition-all duration-300 hover:bg-navy hover:text-white ${category === 'All' ? 'active' : ''}" data-category="${category}">
+                ${category}
+            </button>`
+        ).join('');
+        
+        // Function to render menu items
+        const renderMenu = (filter = 'All') => {
+            const filteredData = filter === 'All' ? menuData : menuData.filter(item => item.category === filter);
+            
+            menuGrid.innerHTML = '';
+            
+            const groupedMenu = filteredData.reduce((acc, item) => {
+                (acc[item.category] = acc[item.category] || []).push(item);
+                return acc;
+            }, {});
+
+            for (const category in groupedMenu) {
+                const categoryHtml = `
+                    <div class="mb-12">
+                        <h2 class="font-heading text-3xl md:text-4xl text-navy font-bold mb-8 text-center">${category}</h2>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            ${groupedMenu[category].map(item => `
+                                <div class="menu-item flex justify-between border-b-2 border-dotted border-gray-300 py-4">
+                                    <div>
+                                        <h4 class="font-heading text-xl text-gray-800">${item.name}</h4>
+                                        <p class="text-gray-600 text-sm">${item.description}</p>
+                                        ${item.tags ? `<span class="inline-block bg-green-100 text-green-800 text-xs font-semibold mt-2 px-2.5 py-0.5 rounded-full">${item.tags.join(', ')}</span>` : ''}
+                                    </div>
+                                    <div class="ml-4 text-right">
+                                        <span class="font-bold text-lg text-gold whitespace-nowrap">${item.price}</span>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+                menuGrid.innerHTML += categoryHtml;
+            }
+        };
+
+        // Add event listeners to filter buttons
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                button.classList.add('active');
+                renderMenu(button.dataset.category);
+            });
+        });
+
+        // Initial render
+        renderMenu();
+
+        // --- Footer Current Year ---
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact Us - Roti & Boti Fine Dining | Doha, Qatar</title>
+    <meta name="description" content="Get in touch with Roti & Boti. Find our address, phone number, and opening hours. Send us a message for inquiries or feedback.">
+    <meta name="keywords" content="contact Roti & Boti, restaurant contact Doha, Indian restaurant address Qatar, Roti & Boti location">
+    <meta name="author" content="Roti & Boti Fine Dining">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="Contact Us - Roti & Boti Fine Dining">
+    <meta property="og:description" content="Find our location, hours, and contact details. We look forward to hearing from you.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1596542456385-c13319875f2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://www.rotiandboti.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Font Configuration -->
+    <style>
+        :root {
+            --navy: #1A237E;
+            --gold: #FFAB00;
+            --off-white: #F8F9FA;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--off-white);
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Lato', sans-serif; }
+        .bg-navy { background-color: var(--navy); }
+        .bg-gold { background-color: var(--gold); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        
+        /* Sticky Header */
+        #main-header.scrolled {
+            background-color: rgba(26, 35, 126, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Input Styling */
+        .form-input {
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 2px rgba(255, 171, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 top-0 left-0 bg-gold text-navy px-4 py-2">Skip to main content</a>
+    
+    <!-- Header -->
+    <header id="main-header" class="bg-navy sticky top-0 left-0 right-0 z-40 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-2" aria-label="Roti & Boti Homepage">
+                    <svg class="h-8 w-8 text-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    <span class="text-white font-heading text-2xl font-bold">Roti & Boti</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-gold transition-colors duration-300">Home</a>
+                    <a href="menu.html" class="text-white hover:text-gold transition-colors duration-300">Menu</a>
+                    <a href="about.html" class="text-white hover:text-gold transition-colors duration-300">About</a>
+                    <a href="contact.html" class="text-gold font-bold transition-colors duration-300">Contact</a>
+                </nav>
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:+97433555777" class="bg-gold text-navy font-bold py-2 px-5 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg">Book a Table</a>
+                    <a href="https://www.talabat.com/qatar/roti-and-boti" target="_blank" class="border-2 border-gold text-white font-bold py-2 px-5 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-gold focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Home</a>
+                 <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Menu</a>
+                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">About</a>
+                 <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gold bg-gray-700">Contact</a>
+            </nav>
+            <div class="px-4 pb-4 border-t border-gray-700">
+                <div class="flex items-center space-x-4 mt-4">
+                    <a href="tel:+97433555777" class="flex-1 text-center bg-gold text-navy font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition-all duration-300">Book a Table</a>
+                    <a href="https://www.talabat.com/qatar/roti-and-boti" target="_blank" class="flex-1 text-center border-2 border-gold text-white font-bold py-2 px-4 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Contact Hero Section -->
+        <section class="relative py-24 md:py-32 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1596542456385-c13319875f2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-center text-white p-4">
+                <h1 class="font-heading text-5xl md:text-7xl font-black">Get In Touch</h1>
+                <p class="text-lg md:text-2xl mt-4">We'd love to hear from you. For reservations, inquiries, or feedback.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-16">
+                    
+                    <!-- Left Column: Contact Info -->
+                    <div class="bg-off-white p-8 rounded-lg shadow-lg">
+                        <h2 class="font-heading text-3xl text-navy mb-6">Contact Information</h2>
+                        
+                        <div class="space-y-6 text-gray-700">
+                            <!-- Address -->
+                            <div>
+                                <h3 class="font-heading text-xl text-navy mb-2">Address</h3>
+                                <p>Showroom #10, Al Emadi Suites, Ras Abu Abboud St, Doha, Qatar</p>
+                                <a href="https://maps.google.com/?q=Roti+%26+Boti+Fine+Dining+Restaurant+Doha" target="_blank" class="text-gold hover:underline mt-1 inline-block">Get Directions</a>
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <h3 class="font-heading text-xl text-navy mb-2">Phone</h3>
+                                <p><a href="tel:+97433555777" class="hover:text-gold">+974 3355 5777</a></p>
+                                <p><a href="tel:+97466927777" class="hover:text-gold">+974 6692 7777</a></p>
+                                <p><a href="tel:+97444444377" class="hover:text-gold">+974 4444 4377</a></p>
+                            </div>
+
+                             <!-- Email -->
+                            <div>
+                                <h3 class="font-heading text-xl text-navy mb-2">Email</h3>
+                                <p><a href="mailto:info@rotiandboti.com" class="hover:text-gold">info@rotiandboti.com</a></p>
+                            </div>
+
+                            <!-- Hours -->
+                            <div>
+                                <h3 class="font-heading text-xl text-navy mb-2">Opening Hours</h3>
+                                <p><span class="font-bold">Mon - Wed, Sun:</span> 11:30 AM - 11:30 PM</p>
+                                <p><span class="font-bold">Thu - Sat:</span> 11:30 AM - 12:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                     <div class="bg-off-white p-8 rounded-lg shadow-lg">
+                        <h2 class="font-heading text-3xl text-navy mb-6">Send Us a Message</h2>
+                        <form id="contact-form" action="https://formspree.io/f/mrbkkjvj" method="POST">
+                             <div class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" name="name" id="name" required class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gold sm:text-sm">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" name="email" id="email" required class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gold sm:text-sm">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                    <textarea id="message" name="message" rows="4" required class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gold sm:text-sm"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-gold text-navy font-bold py-3 px-6 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg text-lg">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <!-- Map Section -->
+        <section class="w-full">
+            <iframe 
+                src="https://maps.google.com/maps?q=Roti%20%26%20Boti%20Fine%20Dining%20Restaurant%20Doha&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                title="Location of Roti & Boti Fine Dining"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" aria-label="Roti & Boti on Instagram" class="text-gray-400 hover:text-gold"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919 4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg></a>
+                <a href="#" aria-label="Roti & Boti on Facebook" class="text-gray-400 hover:text-gold"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+                <p>&copy; <span id="current-year"></span> Roti & Boti Fine Dining. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Mobile Menu ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // --- Footer Current Year ---
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+    </script>
+</body>
+</html>

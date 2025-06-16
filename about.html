@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>About Us - The Roti & Boti Story | Fine Dining in Doha</title>
+    <meta name="description" content="Learn about the story and philosophy of Roti & Boti. Discover our passion for healthy, authentic Indian-inspired cuisine and our commitment to providing a fine dining experience in Doha.">
+    <meta name="keywords" content="about Roti & Boti, Doha restaurant story, Indian fine dining Qatar, our philosophy, healthy Indian food">
+    <meta name="author" content="Roti & Boti Fine Dining">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="About Us - Roti & Boti Fine Dining">
+    <meta property="og:description" content="Discover the passion and philosophy behind Doha's premier destination for healthy Indian-inspired cuisine.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://www.rotiandboti.com/about.html">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Font Configuration -->
+    <style>
+        :root {
+            --navy: #1A237E;
+            --gold: #FFAB00;
+            --off-white: #F8F9FA;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--off-white);
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Lato', sans-serif; }
+        .bg-navy { background-color: var(--navy); }
+        .bg-gold { background-color: var(--gold); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        
+        /* Sticky Header */
+        #main-header.scrolled {
+            background-color: rgba(26, 35, 126, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 top-0 left-0 bg-gold text-navy px-4 py-2">Skip to main content</a>
+    
+    <!-- Header -->
+    <header id="main-header" class="bg-navy sticky top-0 left-0 right-0 z-40 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-2" aria-label="Roti & Boti Homepage">
+                    <svg class="h-8 w-8 text-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    <span class="text-white font-heading text-2xl font-bold">Roti & Boti</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-gold transition-colors duration-300">Home</a>
+                    <a href="menu.html" class="text-white hover:text-gold transition-colors duration-300">Menu</a>
+                    <a href="about.html" class="text-gold font-bold transition-colors duration-300">About</a>
+                    <a href="contact.html" class="text-white hover:text-gold transition-colors duration-300">Contact</a>
+                </nav>
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:+97433555777" class="bg-gold text-navy font-bold py-2 px-5 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg">Book a Table</a>
+                    <a href="https://www.talabat.com/qatar/roti-and-boti" target="_blank" class="border-2 border-gold text-white font-bold py-2 px-5 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-gold focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Home</a>
+                 <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Menu</a>
+                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gold bg-gray-700">About</a>
+                 <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700 hover:text-gold">Contact</a>
+            </nav>
+            <div class="px-4 pb-4 border-t border-gray-700">
+                <div class="flex items-center space-x-4 mt-4">
+                    <a href="tel:+97433555777" class="flex-1 text-center bg-gold text-navy font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition-all duration-300">Book a Table</a>
+                    <a href="https://www.talabat.com/qatar/roti-and-boti" target="_blank" class="flex-1 text-center border-2 border-gold text-white font-bold py-2 px-4 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- About Hero Section -->
+        <section class="relative py-24 md:py-32 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-center text-white p-4">
+                <h1 class="font-heading text-5xl md:text-7xl font-black">Our Story</h1>
+                <p class="text-lg md:text-2xl mt-4">A Passion for Purity, a Taste of Tradition.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    
+                    <!-- Left Column: Text Content -->
+                    <div class="text-lg text-gray-700 space-y-6">
+                        <div>
+                            <h2 class="font-heading text-3xl text-navy mb-4">A Vision for Healthy, Authentic Cuisine</h2>
+                            <p>Established in 2016, Roti & Boti was born from a passion to redefine Indian cuisine. Our founder's vision was to "cook and serve healthy, Indian-inspired takeout cuisine" that stands in delicious contrast to the traditionally heavy and oily dishes often found elsewhere. We believe that food can be both wholesome and rich in flavor, prepared with only the freshest, highest-quality ingredients.</p>
+                        </div>
+                         <div>
+                            <h2 class="font-heading text-3xl text-navy mb-4">Our Philosophy</h2>
+                            <p>Our mission is to offer an authentic yet innovative dining experience. We embrace locally sourced ingredients to create "wholesome, flavorful & authentic Asian cuisine particularly Indian / Mughlai, Afghan & Chinese". This commitment to quality is matched by our dedication to providing a fine dining atmosphere with "Efficient and friendly service."</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Image -->
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="The elegant and welcoming interior of Roti & Boti" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <!-- Ambiance Section -->
+        <section class="py-16 md:py-24 bg-off-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                     <!-- Left Column: Image -->
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="A detailed view of a dining table setup at Roti & Boti" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+                    
+                    <!-- Right Column: Text Content -->
+                    <div class="text-lg text-gray-700 space-y-6">
+                        <div>
+                            <h2 class="font-heading text-3xl text-navy mb-4">The Roti & Boti Ambiance</h2>
+                            <p>Step into our "Upmarket, neat, well laid out Space" that radiates a "wonderful atmosphere". Our interiors and furniture are meticulously chosen to create an inviting and refined setting, making it the perfect place for a romantic dinner, a family celebration, or a professional luncheon.</p>
+                        </div>
+                        <div>
+                            <h2 class="font-heading text-3xl text-navy mb-4">Our Services</h2>
+                            <p>To meet all your needs, we offer a range of services including elegant dine-in, convenient takeaway & delivery, professional outdoor catering for personal and corporate events, and our famous all-you-can-eat Indian buffet on select days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                 <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Roti & Boti</h4>
+                    <p class="text-gray-400">Doha's premier destination for healthy, authentic, and unforgettable Indian-inspired fine dining.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="menu.html" class="text-gray-400 hover:text-gold">Menu</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-gold">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-gold">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Contact Us</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>Showroom #10, Al Emadi Suites</p>
+                        <p>Ras Abu Abboud St, Doha, Qatar</p>
+                        <p class="mt-2"><a href="tel:+97433555777" class="hover:text-gold">+974 3355 5777</a></p>
+                        <p><a href="mailto:info@rotiandboti.com" class="hover:text-gold">info@rotiandboti.com</a></p>
+                    </address>
+                </div>
+                 <!-- Google Maps Embed -->
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Our Location</h4>
+                    <div class="rounded-lg overflow-hidden border-2 border-gold">
+                         <iframe 
+                            src="https://maps.google.com/maps?q=Roti%20%26%20Boti%20Fine%20Dining%20Restaurant%20Doha&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="160" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Location of Roti & Boti Fine Dining"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+                <p>&copy; <span id="current-year"></span> Roti & Boti Fine Dining. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Mobile Menu ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Footer Current Year ---
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+    </script>
+</body>
+</html>
