@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Roti & Boti Fine Dining - Healthy Indian Cuisine in Doha</title>
+    <meta name="description" content="Experience Doha's premier fine dining restaurant, Roti & Boti. We offer healthy, authentic Indian-inspired cuisine, including Mughlai, Afghan, and Chinese dishes in an elegant atmosphere. Book your table or order online today!">
+    <meta name="keywords" content="Indian food Doha, fine dining Qatar, healthy Indian cuisine, Roti & Boti menu, buffet Doha, vegetarian options Doha, best biryani, Indian catering Doha, restaurant in Doha">
+    <meta name="author" content="Roti & Boti Fine Dining">
+
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="Roti & Boti Fine Dining - Healthy Indian Cuisine in Doha">
+    <meta property="og:description" content="Experience Doha's premier fine dining restaurant. We offer healthy, authentic Indian-inspired cuisine in an elegant atmosphere.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1A237E/FFAB00?text=Roti+%26+Boti">
+    <meta property="og:url" content="https://www.rotiandboti.com">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles & Font Configuration -->
+    <style>
+        :root {
+            --navy: #1A237E;
+            --gold: #FFAB00;
+            --off-white: #F8F9FA;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--off-white);
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-heading {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-body {
+            font-family: 'Lato', sans-serif;
+        }
+        .bg-navy { background-color: var(--navy); }
+        .bg-gold { background-color: var(--gold); }
+        .text-navy { color: var(--navy); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        
+        /* Animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in-section {
+                transition: none;
+            }
+        }
+        
+        /* Sticky Header */
+        #main-header.scrolled {
+            background-color: rgba(26, 35, 126, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <!-- JSON-LD Schema Markup for Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Roti & Boti Fine Dining",
+      "image": "https://placehold.co/1200x800/1A237E/FFFFFF?text=Roti+%26+Boti+Interior",
+      "url": "https://www.rotiandboti.com",
+      "telephone": "+974-33555777",
+      "servesCuisine": "Indian",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Showroom #10, Al Emadi Suites, Ras Abu Abboud St",
+        "addressLocality": "Doha",
+        "addressCountry": "QA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.2854,
+        "longitude": 51.5310
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Sunday"
+          ],
+          "opens": "11:30",
+          "closes": "23:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:30",
+          "closes": "23:59"
+        }
+      ],
+      "menu": "https://www.rotiandboti.com/menu.html",
+      "acceptsReservations": "True"
+    }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-0 focus:left-0 focus:bg-gold focus:text-navy focus:px-4 focus:py-2">
+      Skip to main content
+    </a>
+    
+    <!-- Header -->
+    <header id="main-header" class="bg-navy fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="/" class="text-white font-heading text-2xl font-bold" aria-label="Roti & Boti Homepage">
+                    Roti & Boti
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-gold transition-colors duration-300">Home</a>
+                    <a href="/menu.html" class="text-white hover:text-gold transition-colors duration-300">Menu</a>
+                    <a href="#about" class="text-white hover:text-gold transition-colors duration-300">About</a>
+                    <a href="#contact" class="text-white hover:text-gold transition-colors duration-300">Contact</a>
+                </nav>
+
+                <!-- Desktop CTAs -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="/reservations.html" class="bg-gold text-navy font-bold py-2 px-5 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg">Book a Table</a>
+                    <a href="/order.html" class="border-2 border-gold text-white font-bold py-2 px-5 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-gold focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700 hover:text-gold">Home</a>
+                <a href="/menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700 hover:text-gold">Menu</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700 hover:text-gold">About</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700 hover:text-gold">Contact</a>
+            </nav>
+            <div class="px-4 pb-4 border-t border-gray-700">
+                <div class="flex items-center space-x-4 mt-4">
+                    <a href="/reservations.html" class="flex-1 text-center bg-gold text-navy font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition-all duration-300">Book a Table</a>
+                    <a href="/order.html" class="flex-1 text-center border-2 border-gold text-white font-bold py-2 px-4 rounded-full hover:bg-gold hover:text-navy transition-all duration-300">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/10184b/333333?text=Elegant+Dining+Atmosphere');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 text-center text-white p-4">
+                <h1 class="font-heading text-5xl md:text-7xl font-black mb-4 animate-fade-in-down">Doha's Healthy Indian Fine Dining</h1>
+                <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-up">Experience a culinary journey where tradition meets innovation, transforming classic flavors into wholesome, unforgettable dishes.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="/reservations.html" class="bg-gold text-navy font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg text-lg">Book a Table</a>
+                    <a href="/order.html" class="border-2 border-gold text-white font-bold py-3 px-8 rounded-full hover:bg-gold hover:text-navy transition-all duration-300 text-lg">Order Online</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Cuisine Section -->
+        <section id="about" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in-section">
+                        <h2 class="font-heading text-4xl text-navy font-bold mb-4">Our Distinctive Cuisine</h2>
+                        <p class="mb-4 text-lg text-gray-700">At Roti & Boti, we pride ourselves on a "healthy, Indian-inspired cuisine" that stands apart. Our commitment to "wholesome, flavorful & authentic Asian cuisine" ensures every ingredient is fresh and of the highest quality.</p>
+                        <p class="mb-6 text-lg text-gray-700">Forget heavy, oily dishes – prepare for an experience that is "very tasty and rich in flavour," served in an "Upmarket, neat, well laid out Space" with a wonderful atmosphere.</p>
+                        <a href="/about.html" class="text-gold font-bold text-lg hover:underline">Read Our Story &rarr;</a>
+                    </div>
+                    <div class="fade-in-section">
+                        <img src="https://placehold.co/600x400/FFAB00/1A237E?text=Signature+Dish" alt="A beautifully presented signature dish from Roti & Boti" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buffet Highlights Section -->
+        <section id="buffet" class="py-20 md:py-32 bg-navy text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="fade-in-section">
+                    <h2 class="font-heading text-4xl font-bold mb-4">Our Famous Indian Buffet</h2>
+                    <p class="max-w-3xl mx-auto mb-10 text-lg text-gray-300">Join us for an all-you-can-eat selection of our finest dishes, available for lunch and dinner on select days. A feast for the senses awaits!</p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h3 class="font-heading text-2xl text-gold mb-2">Tantalizing Thursday</h3>
+                            <p class="text-gray-400">Kickstart your weekend with an extravagant spread.</p>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h3 class="font-heading text-2xl text-gold mb-2">Foodie Friday</h3>
+                            <p class="text-gray-400">The perfect Friday treat for you and your family.</p>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h3 class="font-heading text-2xl text-gold mb-2">Super Saturday</h3>
+                            <p class="text-gray-400">End your week on a high note with our special buffet.</p>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="/reservations.html" class="bg-gold text-navy font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg text-lg">Reserve Your Buffet Spot</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-in-section">
+                    <h2 class="font-heading text-4xl text-navy font-bold mb-4">What Our Guests Say</h2>
+                    <p class="max-w-2xl mx-auto text-lg text-gray-600">Our greatest pride is the praise we receive from our patrons.</p>
+                </div>
+                <div id="testimonial-carousel" class="relative fade-in-section">
+                    <div class="overflow-hidden">
+                        <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Testimonial items will be injected here by JS -->
+                        </div>
+                    </div>
+                    <button id="prev-testimonial" class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 bg-white p-2 rounded-full shadow-md text-navy hover:bg-gray-100" aria-label="Previous testimonial">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="next-testimonial" class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 bg-white p-2 rounded-full shadow-md text-navy hover:bg-gray-100" aria-label="Next testimonial">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1">
+                    <h4 class="font-heading text-xl font-bold mb-4">Roti & Boti</h4>
+                    <p class="text-gray-400">Doha's premier destination for healthy, authentic, and unforgettable Indian-inspired fine dining.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/menu.html" class="text-gray-400 hover:text-gold">Menu</a></li>
+                        <li><a href="/about.html" class="text-gray-400 hover:text-gold">About Us</a></li>
+                        <li><a href="/reservations.html" class="text-gray-400 hover:text-gold">Reservations</a></li>
+                        <li><a href="/faq.html" class="text-gray-400 hover:text-gold">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Contact Us</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>Showroom #10, Al Emadi Suites</p>
+                        <p>Ras Abu Abboud St, Doha, Qatar</p>
+                        <p class="mt-2"><a href="tel:+97433555777" class="hover:text-gold">+974 3355 5777</a></p>
+                        <p><a href="mailto:info@rotiandboti.com" class="hover:text-gold">info@rotiandboti.com</a></p>
+                    </address>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h4 class="font-heading text-xl font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Roti & Boti on Instagram" class="text-gray-400 hover:text-gold">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Roti & Boti on Facebook" class="text-gray-400 hover:text-gold">
+                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+                <p>&copy; <span id="current-year"></span> Roti & Boti Fine Dining. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Sticky Header on Scroll ---
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // --- Fade-in sections on scroll ---
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- Testimonial Carousel ---
+        const testimonials = [
+            { name: 'Sai Sudarshan', quote: 'Good food. Good ambience. Good service. A perfect combination for a great dining experience. Highly recommended!' },
+            { name: 'Yasmeen Siva', quote: 'The taste was superb. This was my second visit and definitely not my last. The flavors are authentic and the dishes are prepared with care. Yummy food!' },
+            { name: 'Brijesh Panchal', quote: 'Perfect place for vegetarian people. They have a wide variety of delicious vegetarian options that are hard to find elsewhere.' }
+        ];
+        
+        const slider = document.getElementById('testimonial-slider');
+        const prevBtn = document.getElementById('prev-testimonial');
+        const nextBtn = document.getElementById('next-testimonial');
+        let currentIndex = 0;
+
+        function renderTestimonials() {
+            slider.innerHTML = testimonials.map((t, index) => `
+                <div class="w-full flex-shrink-0 px-4">
+                    <div class="bg-gray-50 p-8 rounded-lg text-center shadow-lg">
+                        <p class="text-lg italic text-gray-700 mb-4">"${t.quote}"</p>
+                        <p class="font-bold text-navy text-lg">- ${t.name}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateCarousel() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            updateCarousel();
+        });
+
+        // Auto-play
+        setInterval(() => {
+            nextBtn.click();
+        }, 5000); // Change testimonial every 5 seconds
+
+        renderTestimonials();
+
+
+        // --- Footer: Current Year ---
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+    </script>
+</body>
+</html>
